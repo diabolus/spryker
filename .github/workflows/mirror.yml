@@ -17,5 +17,5 @@ jobs:
 
       - name: Mirror to GitLab
         run: |
-          git remote add gitlab "https://oauth2:glpat-P5evvvZdzS6px-r1YQiB@gitlab.com/gurkansevinc/spryker_mirror.git"
+          git remote add gitlab "https://oauth2:glpat-P5evvvZdzS6px-r1YQiB@gitlab.com/gurkansevinc/mymirror.git"
           git push --mirror gitlab --force 
