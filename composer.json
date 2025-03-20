@@ -230,7 +230,8 @@
         "spryker/warehouse-users-backend-api": "^1.1.0",
         "spryker/warehouses-backend-api": "^1.0.0",
         "spryker/wishlists-rest-api": "^1.6.2",
-        "symfony/http-kernel": "^6.4.12"
+        "symfony/http-kernel": "^6.4.12",
+        "dept-spryker/jh-azure-dummy": "^3.1.0"
     },
     "require-dev": {
         "codeception/codeception": "5.1.2",
@@ -310,7 +311,11 @@
         {
             "type": "git",
             "url": "https://github.com/spryker/cypress-tests.git"
-        }
+        },
+        {
+            "type": "vcs",
+            "url": "https://gitlab.sr-system.de/jungheinrich/jh-azure-dummy.git"
+        },
     ],
     "scripts": {
         "compile": [
