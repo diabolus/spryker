@@ -14,6 +14,7 @@ jobs:
         host: "https://gitlab.sr-system.de/"
         token: glptt-3b243c7ba8e221b3202f23d0b80b822e482744a0
         project_id: 1023
+        ref: v1.0.0
         wait: true
         interval: 1s
     - name: print output
