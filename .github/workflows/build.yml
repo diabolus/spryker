@@ -1,0 +1,24 @@
+name: trigger gitlab job
+on:
+    workflow_dispatch:
+jobs:
+  
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger Job
+      uses: ghcr.io/appleboy/gitlab-ci-action@v1.3.0
+      id: trigger
+      with:
+        host: "https://gitlab.sr-system.de/"
+        token: glptt-3b243c7ba8e221b3202f23d0b80b822e482744a0
+        project_id: 1023
+        wait: true
+        interval: 1s
+    - name: print output
+      run: |
+        echo ${{ steps.trigger.outputs.id }}
+        echo ${{ steps.trigger.outputs.sha }}
+        echo ${{ steps.trigger.outputs.web_url }}
+        echo ${{ steps.trigger.outputs.status }}
