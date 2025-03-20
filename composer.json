@@ -315,7 +315,7 @@
         {
             "type": "vcs",
             "url": "https://gitlab.sr-system.de/jungheinrich/jh-azure-dummy.git"
-        },
+        }
     ],
     "scripts": {
         "compile": [
