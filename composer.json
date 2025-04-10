@@ -311,10 +311,6 @@
         {
             "type": "git",
             "url": "https://github.com/spryker/cypress-tests.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://gitlab.sr-system.de/jungheinrich/jh-azure-dummy.git"
         }
     ],
     "scripts": {
