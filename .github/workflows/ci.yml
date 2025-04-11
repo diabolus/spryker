@@ -47,11 +47,10 @@ jobs:
                     sudo sysctl -w vm.max_map_count=262144
 
             -   name: Runs Elasticsearch
-                uses: elastic/elastic-github-actions/elasticsearch@master
+                uses: dreamsofimran/elasticsearch-action@v1.0
                 with:
-                    stack-version: 7.10.0
-                    port: 9200
-
+                  elasticsearch version: "7.10.1"
+                  host port: 9200
             -   uses: actions/setup-node@v4
                 with:
                     node-version: '18'
